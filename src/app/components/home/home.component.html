@@ -1,21 +1,43 @@
-<h1>Seja bem vindo ao curso de Angular!</h1>
+<h1>Seja bem vindo ao curso de Linguagens de Programação!</h1>
 <h4 class="text-danger">{{anuncio}}</h4>
+<div class="row">
+  <div class="col">
+    <app-card-produto
+foto="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDdnYY_s2WR_D0jYWwESo2AL9oOHgeFxUtIARamqFFn6qgHUSVdHPdP9ECz-TwhhKZ8Y&usqp=CAU"
+[nomeProduto]="nomeProduto"
+[promocao]="promocao"
+[idProduto]="idProduto"
+[dataValidade]="dataValidade"
+[precoProduto]="35.56"
 
-<div class="card" style="width: 18rem;">
-  <img [src]="foto" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{ nomeProduto | uppercase }}</h5>
-    <span *ngIf="promocao; else elseBlock" class="badge badge-success">Promoção</span>
-    <ng-template #elseBlock>
-      <span class="badge badge-primary">Aproveite</span>
-    </ng-template>
-    <p class="card-text">Identificação: {{ idProduto | number: '2.0-0' }} <br>
-     Validade: {{dataValidade | date: 'shortDate'}}
+></app-card-produto>
 
-    </p>
-    <a href="#" class="btn btn-primary"> {{ precoProduto | currency: 'BRL' : 'symbol':'1.2-3'}}</a>
-  </div>
+
 </div>
 
+  <div class="col">
+<app-card-produto
+foto="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGyTJ4GdwpqPMOVv72uncVsoIqxHeokSyvzG1LTqfmLtiB3F2UQVEvFZm_HVd8PAwoQ9g&usqp=CAU"
+nomeProduto="Curso de Java"
+[promocao]="false"
+[idProduto]="5"
+dataValidade="2021-12-31"
+[precoProduto]="85.50"
 
+></app-card-produto>
 
+</div>
+
+  <div class="col">
+<app-card-produto
+foto="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5KC59ApUVbosPANCZj46-7JiYEGoMknuTNONDS1CiTWuH31D_cf7iLir8TSY8qADepy4&usqp=CAU"
+nomeProduto="Curso de C#"
+[promocao]="true"
+[idProduto]="6"
+dataValidade="2021-11-22"
+[precoProduto]="45.99"
+
+></app-card-produto>
+
+</div>
+</div>

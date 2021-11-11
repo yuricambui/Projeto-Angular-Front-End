@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
  nomeProduto: string = "Curso de Angular";
- anuncio: string = `O ${this.nomeProduto} está em promoção!`;
+ nomeProduto2: string = "Curso de C#";
+ anuncio: string = `O ${this.nomeProduto} e o ${this.nomeProduto2} estão em promoção!`;
  idProduto: number = 3;
  precoProduto: number = 2.51;
  promocao: boolean = true;

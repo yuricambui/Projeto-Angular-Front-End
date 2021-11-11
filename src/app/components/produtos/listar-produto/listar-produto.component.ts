@@ -21,8 +21,11 @@ export class ListarProdutoComponent implements OnInit {
     {nome: 'Curso de Angular', precoProduto: 35.56, validade: '2021-12-31', id: 1},
     {nome: 'Curso de Ionic', precoProduto: 50, validade: '2021-12-31', id: 2, promocao: true},
     {nome: 'Curso de Ionic Avançado', precoProduto: 80, validade: '2021-12-28', id: 3},
-    {nome: 'Curso de Python', precoProduto: 75, validade: '2021-12-25', id: 4},
-    {nome: 'Curso de JavaScript', precoProduto: 50, validade: '2021-12-31', id: 5}
+    {nome: 'Curso de Python', precoProduto: 75.99, validade: '2021-12-25', id: 4},
+    {nome: 'Curso de Java', precoProduto: 85.50, validade: '2021-12-31', id: 5},
+    {nome: 'Curso de C#', precoProduto: 79.99, validade: '2021-12-31', id: 6},
+    {nome: 'Curso de SQL', precoProduto: 70, validade: '2021-12-31', id: 7}
+
   ];
 
   constructor() {
@@ -41,6 +44,7 @@ export class ListarProdutoComponent implements OnInit {
 
     console.log(this.objetoModelo);
     console.log(this.objetoModelo.nome);
+
 
   }
 
